@@ -7,6 +7,12 @@ libs_path = "lib"
 mock_jedi_router = [
     "./src/mocks/mock_jedi_router.cairo",
 ]
+mock_sith_router = [
+    "./src/mocks/mock_sith_router.cairo",
+]
+mock_tenk_router = [
+    "./src/mocks/mock_TenK_router.cairo",
+]
 mock_price_oracle = [
     "./src/mocks/mock_price_oracle.cairo",
 ]

@@ -79,8 +79,11 @@ func __setup__{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_ptr}(
     );
     // %{ print("Router 3: ",ids.router_3_address) %}
 
+    //JediSwap
     %{ context.router_1_address = ids.router_1_address %}
+    //SithSwap
     %{ context.router_2_address = ids.router_2_address %}
+    //TenK
     %{ context.router_3_address = ids.router_3_address %}
 
     // Deploy Price Oracle
@@ -142,6 +145,10 @@ func test_solver{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_ptr
     %{ ids.router_2_address = context.router_2_address %}
     local router_3_address;
     %{ ids.router_3_address = context.router_3_address %}
+
+    //IJedi_router.get_amounts_out(router_1_address)
+
+    //IJedi_router.swap_exact_tokens_for_tokens(router_1_address)
 
     return ();
 }
