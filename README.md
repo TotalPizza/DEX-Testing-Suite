@@ -2,8 +2,8 @@
 
 ## Run tests
 
-Simply add your test code in ./tests/amm_tests.cairo in the 'test_solver' method.
-The '__setup__' method should be setting up the necessary components.
+Simply add your test code in ./tests/amm_tests.cairo in the `test_solver` method.
+The `__setup__` method should be setting up the necessary components.
 
 Then run `protostar test ./tests`
 
